@@ -3,6 +3,7 @@ import * as THREE from 'three';
 function ThreeGraphics(renderer){
 
         var scene = new THREE.Scene();
+        scene.background = new THREE.Color("rgb(100, 100, 100)");
         var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
         var geometry = new THREE.BoxGeometry(1, 1, 1);
         var material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
@@ -11,8 +12,9 @@ function ThreeGraphics(renderer){
         camera.position.z = 5;
         var animate = function () {
           requestAnimationFrame(animate);
-          cube.rotation.x += 0.05;
-          cube.rotation.y += 0.01;
+          cube.rotation.x += 0.09;
+          cube.rotation.y += 0.09;
+          cube.rotation.z += 0.01;
           renderer.render(scene, camera);
         };
         animate();
