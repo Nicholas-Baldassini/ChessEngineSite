@@ -9,7 +9,7 @@ const live = "https://chess-engine-backend.herokuapp.com/";
 const resetLive = "https://chess-engine-backend.herokuapp.com/reset";
 
 const localURLS = {home: local, reset: resetLocal}
-const liveURLS = {home: local, reset: resetLive}
+const liveURLS = {home: live, reset: resetLive}
 
 const URLS = [localURLS, liveURLS][1]
 
