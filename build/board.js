@@ -8,7 +8,7 @@ const getMoveLive = "https://chess-engine-backend.herokuapp.com/getMove";
 const localURLS = { home: local, getMove: getMoveLocal };
 const liveURLS = { home: live, getMove: getMoveLive };
 
-const URLS = [localURLS, liveURLS][0]; //0-local, 1-live
+const URLS = [localURLS, liveURLS][1]; //0-local, 1-live
 
 async function getMove(gameParam) {
   const data = { gameKey: gameParam };
