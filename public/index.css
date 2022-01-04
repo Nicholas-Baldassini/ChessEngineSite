@@ -10,8 +10,8 @@
 }
 @media (max-width: 500px) {
   #board1 {
-    width: 100px;
-    border: 9px solid red;
+    width: 300px;
+    /* border: 9px solid red; */
   }
 }
 
