@@ -8,12 +8,6 @@
   border: 9px solid;
   padding: 0;
 }
-@media (max-width: 500px) {
-  #board1 {
-    width: 300px;
-    /* border: 9px solid red; */
-  }
-}
 
 #non-react {
   position: absolute;
